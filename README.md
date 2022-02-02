@@ -21,15 +21,23 @@ The execution method: -m method_number". If the method is SEQUENTIAL, the num_th
 The work chunk: "-c chunksize". This is an optional argument, used if you use execution method (5), which is a Work-Pool parallel algorithm, as opposed to Data-Parallel (for methods (1)-(5)). For certain images and hardware, this might make more sense for you.
 
 The following filters (to be used with the -f flag) provided are:
+
 (1) 3x3 Laplacian
+
 (2) 5x5 Laplacian
+
 (3) 9x9 Laplacian of Gaussian
 
 And the following methods of execution are provided: 
+
 (1) SEQUENTIAL
+
 (2) SHARDED_ROWS
+
 (3) SHARDED_COLUMNS_COLUMN_MAJOR
+
 (4) SHARDED_COLUMNS_ROW_MAJOR
+
 (5) WORK_QUEUE
 
 
